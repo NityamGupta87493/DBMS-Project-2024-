@@ -1,0 +1,118 @@
+.signup-form-main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9ff;
+}
+
+.form {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(74, 90, 255, 0.12);
+  width: 100%;
+  max-width: 500px;
+  animation: slideUp 0.3s ease;
+}
+
+.top {
+  padding: 32px;
+  text-align: center;
+  border-bottom: 1px solid rgba(74, 90, 255, 0.1);
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(74, 90, 255);
+}
+
+.middle {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.middle-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 2px solid rgba(74, 90, 255, 0.1);
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: rgb(74, 90, 255);
+  box-shadow: 0 0 0 3px rgba(74, 90, 255, 0.1);
+}
+
+.bottom {
+  padding: 0 32px 32px;
+}
+
+.button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.submit {
+  background-color: rgb(74, 90, 255);
+  color: white;
+}
+
+.submit:hover {
+  background-color: rgb(60, 73, 255);
+  transform: translateY(-1px);
+}
+
+.change {
+  color: rgb(74, 90, 255);
+  text-decoration: none;
+  background-color: rgba(74, 90, 255, 0.1);
+  display: block;
+}
+
+.change:hover {
+  background-color: rgba(74, 90, 255, 0.15);
+}
+
+.form-input.error {
+  border-color: #ff4444;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
